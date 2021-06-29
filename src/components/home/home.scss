@@ -7,11 +7,12 @@ $mid_color: #c6ad8f;
 #home{
   width: 100%;
   max-width: 100%;
-  padding-top: 65px;
+  padding: 65px 0px 0px;
   .leader{
-    margin: 0px;
+    margin: 150px 0px 0px;
     padding: 100px 0px;
     background-image: url('../../images/868c4a49d53ac3492503bd6bc7093d2e.jpg');
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
     //min-height: 500px;
 
     background-attachment: fixed;

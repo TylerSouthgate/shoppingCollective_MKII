@@ -40,7 +40,6 @@ class PageHeader extends React.Component<IProps, IStates>{
           </div>
           <PrimaryNavigation navigationList={NAVIGATION[0]['naviItems']} />
         </section>
-        <div className={style.headerChoker}></div>
       </>
     )
   }
