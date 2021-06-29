@@ -37,18 +37,11 @@ class HomePage extends React.Component<IProps,IStates>{
   render = () => { 
     return(
       <section id={style.home} className={masterStyle.pageTemplate}>
-        
-        
         <div className={style.leader} style={this.state.localStyle}>
-          
           <div className={style.homepagePage}>
             <h1 className={style.headerTitle}>welcome to<br /><span>shopping<br />collective</span></h1>
           </div>
-
         </div>
-        
-
-
         <div className={style.homepagePage}>
           <div className={style.homeTriPanel}>
             <div>
