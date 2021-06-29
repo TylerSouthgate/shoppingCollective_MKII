@@ -12,7 +12,7 @@ export const GetCategories = ({cats}: ITypes) => {
       <p>Categories</p>
       {Object.keys(catsList).map((key: any)=>{
         return(
-          <span>{catsList[key]}</span>
+          <span key={'cat'+key}>{catsList[key]}</span>
         )
       })}
     </div>

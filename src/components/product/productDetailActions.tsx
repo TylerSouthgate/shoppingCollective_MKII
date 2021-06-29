@@ -31,7 +31,7 @@ export default class ProductDetailActions extends React.Component<IProps, IState
     this.setState({addedToBasket: inValue}, () => {});
   }
   render = () => {
-    const localStyle: any = { 'opacity': this.state.addedToBasket?'1':'0', 'height': this.state.addedToBasket?'500px':'0px'}
+    const localStyle: any = { 'opacity': this.state.addedToBasket?'1':'0', 'height': this.state.addedToBasket?'100vh':'0px'}
     return(
       <div id={style.productActions} className={styleMaster.clrfix}>
         <div className={style.addedTo} style={localStyle}><p>Added to basket</p></div>
