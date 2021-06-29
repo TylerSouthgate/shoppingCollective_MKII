@@ -14,25 +14,41 @@ interface IProps{
   dispatch: Dispatch<IAppState>;
 }
 interface IStates{
+  localStyle: any
 }
 
 class HomePage extends React.Component<IProps,IStates>{
   constructor(props:IProps){
     super(props);
     this.state = {
+      localStyle: {'backgroundPositionY': 0}
     } 
+  }
+  componentDidMount = () => {
+    addEventListener('scroll', this.bgScroll)
   }
   updateCurrency = (inValue: string) => {
     this.props.dispatch(updateCurrency(inValue));
   }
+  bgScroll = () => {
+    let sTop: number = window.scrollY;
+    this.setState({localStyle: {'backgroundPositionY': -sTop*0.5+'px'}})
+  }
   render = () => { 
     return(
       <section id={style.home} className={masterStyle.pageTemplate}>
-        <div className={style.leader}>
+        
+        
+        <div className={style.leader} style={this.state.localStyle}>
+          
           <div className={style.homepagePage}>
             <h1 className={style.headerTitle}>welcome to<br /><span>shopping<br />collective</span></h1>
           </div>
+
         </div>
+        
+
+
         <div className={style.homepagePage}>
           <div className={style.homeTriPanel}>
             <div>

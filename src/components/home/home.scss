@@ -2,40 +2,43 @@ $text_color: #616161;
 $dark_color: #425664;
 $light_color: #f6f4f2;
 $mid_color: #c6ad8f;
-
-
 #home{
   width: 100%;
   max-width: 100%;
   padding: 65px 0px 0px;
   .leader{
-    margin: 150px 0px 0px;
+    margin: 0px 0px 0px;
     padding: 100px 0px;
     background-image: url('../../images/868c4a49d53ac3492503bd6bc7093d2e.jpg');
-    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
     background-attachment: fixed;
-    background-position: center;
+    background-position-y: 0px;
     background-repeat: no-repeat;
     background-size: cover;
+    .homepagePage{
+      max-width: 1024px;
+      margin: 0px auto;
+      h1{
+        color: $mid_color;
+        text-align: left;
+        font-size: 80px;
+        font-family: "PoppinsExtraLight";
+        line-height: 0.75;
+        margin: 24px 0px;
+        span{
+          color: $light_color;
+          font-size: 125px;
+          line-height: inherit;
+          font-family: inherit;
+        }
+      }
+      
+    }
   }
   .homepagePage{
     max-width: 1024px;
     margin: 0px auto;
     
-    h1{
-      color: $mid_color;
-      text-align: left;
-      font-size: 80px;
-      font-family: "PoppinsExtraLight";
-      line-height: 0.75;
-      margin: 24px 0px;
-      span{
-        color: $light_color;
-        font-size: 125px;
-        line-height: inherit;
-        font-family: inherit;
-      }
-    }
     .homeTriPanel{
       padding: 48px 0px;
       display: flex;
