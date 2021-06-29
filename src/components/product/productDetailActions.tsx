@@ -39,7 +39,7 @@ export default class ProductDetailActions extends React.Component<IProps, IState
           <GetExchangeConversion nodeStyle={style.price} currency={this.props.currency} amount={this.props.amount} exchange={this.props.exchange} />
         </div>
         <div className={style.currency}>
-          <CurrencySwitcher currentCurrancy={this.props.currency} updateCurrency={this.props.updateCurrency} />
+          <CurrencySwitcher currentCurrancy={this.props.currency} updateCurrency={this.props.updateCurrency}  type={'SELECT'} />
         </div>
         <div className={style.addto}>
           <AddToBasket productId={this.props.productId} updateBasket={this.props.updateBasket} setAddedToBasket={this.setAddedToBasket}/>

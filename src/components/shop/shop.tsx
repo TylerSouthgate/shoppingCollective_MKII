@@ -57,7 +57,7 @@ class ShopPage extends React.Component<IProps, IStates>{
     return(
       <section className={masterStyle.pageTemplate}>
         <MastHead title={'All the stuff to buy!'} hookLine={'Sed finibus justo quis tortor ultrices finibus. Duis suscipit fringilla erat eu feugiat. Phasellus porta ipsum risus, sit amet pharetra purus vehicula nec.'} />
-        <div><CurrencySwitcher currentCurrancy={this.props.auth.auth.currency} updateCurrency={this.updateCurrency} /></div>
+        <div><CurrencySwitcher currentCurrancy={this.props.auth.auth.currency} updateCurrency={this.updateCurrency}  type={'SELECT'} /></div>
         <div>
           <BuildShopList 
             data={this.state.shopList} 

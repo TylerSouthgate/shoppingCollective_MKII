@@ -8,7 +8,9 @@
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "copy-fonts": "copyfiles -f src/fonts/* build/fonts",
-    "copy-images": "copyfiles -f src/images/* build/images"
+    "copy-images": "copyfiles -f src/images/* build/images",
+    "install_cypress": "cd node_modules/.bin/ && cypress install",
+    "cypress": "cd node_modules/.bin/ && cypress open"
   },
   "keywords": [],
   "author": "Tyler Southgate <tylersouthgate@hotmail.com>",

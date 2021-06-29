@@ -43,7 +43,7 @@ export default class BasketActions extends React.Component<IProps, IStates>{
           <GetExchangeConversion nodeStyle={style.price} currency={this.props.currency} amount={this.getTotal()} exchange={this.props.exchange} />
         </div>
         <div className={style.currency}>
-          <CurrencySwitcher currentCurrancy={this.props.currency} updateCurrency={this.props.updateCurrency} />
+          <CurrencySwitcher currentCurrancy={this.props.currency} updateCurrency={this.props.updateCurrency} type={'SELECT'} />
         </div>
       </div>
     )

@@ -24,7 +24,6 @@ export const ShopItem = ({data, updateBasket, currency, exchange }: ITypes) => {
     <div id={style.shopListItem}>
       <div onClick={()=>{gotoProduct(data['id'])}}>
         <div className={style.addedTo} style={localStyle}><p>Added to basket</p></div>
-        {/*<p>{data['id']}</p>*/}
         <GetFirstImage data={data['imageURLs']} usage={'SHOP'}/>
         <p>{data['name'].length>40?data['name'].substring(0,40)+'...':data['name']}</p>
         <GetExchangeConversion nodeStyle={style.price} currency={currency} amount={parseInt(data['prices.amountMin'])} exchange={exchange} />
