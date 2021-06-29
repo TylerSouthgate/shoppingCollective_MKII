@@ -3,6 +3,7 @@ import { AddToBasket } from '../common/productListHelpers/addToBasket';
 import { CurrencySwitcher } from '../common/productListHelpers/currencySwitcher/CurrencySwitcher';
 import { GetExchangeConversion } from '../common/productListHelpers/getExchangeConversion';
 import styleMaster from '../routeScss/index.scss';
+import { GetCategories } from './getCategories';
 import style from './product.scss';
 
 
@@ -13,6 +14,7 @@ interface IProps{
   updateCurrency: any;
   updateBasket: any;
   productId: string;
+  cats: string;
 }
 interface IStates{
   addedToBasket: boolean;
@@ -29,7 +31,7 @@ export default class ProductDetailActions extends React.Component<IProps, IState
     this.setState({addedToBasket: inValue}, () => {});
   }
   render = () => {
-    const localStyle: any = { 'opacity': this.state.addedToBasket?'1':'0', 'height': this.state.addedToBasket?'200px':'0px'}
+    const localStyle: any = { 'opacity': this.state.addedToBasket?'1':'0', 'height': this.state.addedToBasket?'500px':'0px'}
     return(
       <div id={style.productActions} className={styleMaster.clrfix}>
         <div className={style.addedTo} style={localStyle}><p>Added to basket</p></div>
@@ -41,6 +43,9 @@ export default class ProductDetailActions extends React.Component<IProps, IState
         </div>
         <div className={style.addto}>
           <AddToBasket productId={this.props.productId} updateBasket={this.props.updateBasket} setAddedToBasket={this.setAddedToBasket}/>
+        </div>
+        <div>
+          <GetCategories cats={this.props.cats}/>
         </div>
       </div>
     )

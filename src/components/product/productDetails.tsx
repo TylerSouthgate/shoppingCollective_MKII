@@ -49,6 +49,7 @@ export default class ProductDetails extends React.Component<IProps, IStates>{
                 updateCurrency={this.props.updateCurrency}
                 updateBasket={this.props.updateBasket}
                 productId={this.props.product['id']}
+                cats={this.props.product['categories']}
             />
           </div>
         </div>

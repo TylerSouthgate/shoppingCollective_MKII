@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 import { Dispatch } from 'redux';
 import { DATA_SET } from '../../config/dataset';
+import { BackButton } from '../common/backbutton/backButton';
 import { MastHead } from '../common/mastHead/mastHead';
 import { updateBasket, updateCurrency, updateExchange } from '../redux/actions/dDataActions';
 import { IAppState } from '../redux/reducers/initialState';
@@ -68,7 +69,8 @@ class ProductPage extends React.Component<IProps, IStates>{
   render = () => {
     return(
       <section id={style.productPage} className={masterStyle.pageTemplate}>
-        <MastHead title={'Lets take a closer look at that...'} hookLine={'Sed finibus justo quis tortor ultrices finibus. Duis suscipit fringilla erat eu feugiat. Phasellus porta ipsum risus, sit amet pharetra purus vehicula nec.'} />
+        <MastHead title={'Lets take a closer look at that...'} />
+        <BackButton />
         <ProductDetails 
           product={this.getProduct()}
           currency={this.props.auth.auth.currency}

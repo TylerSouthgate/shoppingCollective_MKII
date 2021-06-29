@@ -10,6 +10,7 @@ import BasketActions from './basketActions'
 import style from './basket.scss';
 import { updateBasket, updateCurrency, updateExchange } from '../redux/actions/dDataActions';
 import { ROUTE_SHOP } from '../../config/constants';
+import { BackButton } from '../common/backbutton/backButton';
 const apis = require('../../API/thirdparty_api')
 
 interface IProps{
@@ -51,7 +52,8 @@ class BasketPage extends React.Component<IProps, IStates>{
   render = () => {
     return(
       <section id={style.basket} className={masterStyle.pageTemplate}>
-        <MastHead title={'What\'s in the bag?'} hookLine={'Sed finibus justo quis tortor ultrices finibus. Duis suscipit fringilla erat eu feugiat. Phasellus porta ipsum risus, sit amet pharetra purus vehicula nec.'} />
+        <MastHead title={'What\'s in the bag?'} />
+        <BackButton />
         <div className={masterStyle.clrfix}>
         {this.props.auth.auth.basket<=0?
           <div className={style.empty}>

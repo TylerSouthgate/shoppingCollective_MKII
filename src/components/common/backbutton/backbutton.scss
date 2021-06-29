@@ -1,0 +1,25 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+#back{
+  width: 100%;
+  padding: 0px 0px 12px;
+  margin: 0px 0px 24px;
+  border-bottom: 1px solid #e4e4e4;
+  p{
+    position: relative;
+    cursor: pointer;
+    font-size: 128%;
+    text-align: right;
+    svg{
+      position: absolute;
+      top: 2px;
+      right: 47px;
+    }
+  }
+  p:hover{
+    color: $mid_color;
+  }
+}
