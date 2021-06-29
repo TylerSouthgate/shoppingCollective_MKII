@@ -5,24 +5,20 @@ import PageFooter from './common/footer/footer';
 import { BrowserRouter } from "react-router-dom";
 import style from './routeScss/index.scss';
 
-
-
 export default class App extends React.Component{
   render = () => {
     return(
-      
-        <div id={style.page}>
-          <BrowserRouter>
-            <header>
-              <PageHeader />
-            </header>
-            <MainRoutes />
-            <footer>
-              <PageFooter />
-            </footer>
-          </BrowserRouter>
-        </div>
-      
+      <div id={style.page}>
+        <BrowserRouter>
+          <header>
+            <PageHeader />
+          </header>
+          <MainRoutes />
+          <footer>
+            <PageFooter />
+          </footer>
+        </BrowserRouter>
+      </div>
     )
   }
 };
