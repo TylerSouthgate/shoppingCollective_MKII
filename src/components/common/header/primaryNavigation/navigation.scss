@@ -1,0 +1,32 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+#primaryNav{
+  li{
+    float: left;
+    list-style: none;
+    margin: 0px 0px 0px 0px;
+    width: 25%;
+    text-align: left;
+    a{
+      display: block;
+      text-decoration: none;
+      padding: 12px 0px 12px 0px !important;
+      color: $light_color;
+      line-height: 1;  
+      width: 100%;
+    }
+    a:hover{
+      color: $mid_color;
+      padding: 12px 0px 8px 0px;
+      border-bottom: 4px solid $mid_color;
+    }
+    .selected{
+      color: $mid_color;
+      padding: 12px 0px 8px 0px;
+      border-bottom: 4px solid #FFF;
+    }
+  }  
+}

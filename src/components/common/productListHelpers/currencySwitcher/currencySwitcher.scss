@@ -1,0 +1,16 @@
+#currencySwitcher{
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e4e4e4;
+  p{
+    display: inline-block;
+    margin-right: 12px;
+  }
+  label{
+    display: inline-block;
+    margin-right: 12px;
+    input{
+      margin-right: 6px;
+    }
+  }
+}

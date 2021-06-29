@@ -1,0 +1,76 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+#basket{
+  .left{
+    float: left;
+    width: 80%;
+    #basketItem{
+      border-bottom: 1px solid #e4e4e4;
+      padding: 0px 0px 12px;
+      margin: 0px 24px 12px 0px;
+      .image{
+        float: left;
+        margin-right: 14px;
+      }
+      .price{
+        font-family: "PoppinsBold";
+        font-size: 128%;
+        margin: 6px 0px;
+      }
+      .price span {
+        font-family: "PoppinsBold";
+        font-size: inherit;
+      }
+    }
+  }
+  .right{
+    float: left;
+    width: 20%;
+  }  
+  .empty{
+    margin: 48px 0px;
+    h3{
+      font-size: 128%;
+      margin: 0px 0px 12px;
+    }
+  }
+}
+#basketActions{
+  background: $light_color;
+  padding: 12px;
+  border-radius: 8px;
+  .totals{
+    border-bottom: 1px solid #e4e4e4;
+    p{
+      text-align: center;
+      padding: 0px 0px 12px;
+    }
+    p.total{
+      padding: 0px;
+    }
+    p.price{
+      padding: 0px 0px 12px;
+      font-size: 200%;
+      text-align: center;
+      font-family: "PoppinsExtraBold";
+      color: $dark_color;
+    } 
+    p.price span{
+      padding: 0px 0px 12px;
+      font-size: inherit;
+      text-align: center;
+      font-family: "PoppinsExtraBold";
+      color: $dark_color;
+    }
+  }
+  .currency{
+    text-align: center;
+    padding: 12px 0px;
+    p{
+      padding: 0px 0px 12px 0px;
+    }
+  }
+}

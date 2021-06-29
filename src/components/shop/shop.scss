@@ -1,0 +1,59 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+#shopListCont{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 12px;
+  #shopListItem{
+    width: 200px;
+    padding: 24px;
+    position: relative;
+    p{
+      text-align: center;
+    }
+    .price{
+      margin: 12px 0px;
+      font-size: 128%;
+      padding: 12px 0px;
+      font-family: "PoppinsSemiBold";
+      border-top: 1px solid $text-color;
+      border-bottom: 1px solid $text-color;
+    }
+    .price span{
+      font-size: inherit;
+      font-family: "PoppinsSemiBold";
+    }
+    .addedTo{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(0,0,0,0.7);
+      transition: all 500ms linear;
+      opacity: 0;
+      p{
+        padding-top: 48px;
+        font-size: 450%;
+        line-height:0.7;
+        font-family: "PoppinsExtraLight";
+        color: $light_color;
+        text-align: left;
+      } 
+
+    }
+  }
+  #shopListItem:hover{
+    background: $light_color;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.34);
+  }
+}

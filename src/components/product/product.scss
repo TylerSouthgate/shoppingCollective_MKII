@@ -1,0 +1,158 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+#productPage{
+  .left{
+    float: left;
+    width: 80%;
+    h3{
+      font-size: 128%;
+    }
+    .description{
+      border-top: 1px solid #e4e4e4;
+      margin: 24px 0px;
+      padding: 24px 0px;
+      h3{
+        margin-bottom: 12px;
+      }
+    }
+    .masterCar{
+      position: relative;
+    }
+    .detailImageCont{
+      margin: 14px 24px 24px 0px;
+      #controlLeft, #controlRight{
+        position: absolute;
+        top: 40px;
+        
+      }
+      #controlLeft{
+        left: 0px;
+      }
+      #controlRight{
+        right: 0px;
+      }
+      #controlLeft.controllerLeft{
+        background-color: rgba(0,0,0,0.5);
+        padding: 6px 8px 3px 6px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #controlRight.controllerRight{
+        background-color: rgba(0,0,0,0.5);
+        padding: 6px 6px 3px 8px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      #controlLeft.controllerLeftInactive{
+        background-color: rgba(0,0,0,0.1);
+        padding: 6px 8px 3px 6px;
+        border-radius: 50%;
+      }
+      #controlRight.controllerRightInactive{
+        background-color: rgba(0,0,0,0.1);
+        padding: 6px 6px 3px 8px;
+        border-radius: 50%;
+      }
+      svg{
+        fill: #FFF;
+        height: 25px;
+        width: 25px;
+      }
+      .displayImage{
+        width: 100%;
+        height: 450px;
+        border: 1px solid #e4e4e4;
+      }
+      .thumbList{
+        width: 672px;
+        overflow: hidden;
+        height: 112px;
+        margin: 24px auto;
+        position: relative;
+        .thumbListCar{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          transition: all 200ms;
+          div{
+            margin: 6px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            cursor: pointer;
+            opacity: 0.5;
+            float: left;
+          }
+          div.selected{
+            opacity: 1;
+          }
+        }
+      }  
+    }
+  }
+  .right{
+    float: right;
+    width: 20%; 
+  }
+}
+
+#productActions{
+  background: $light_color;
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+  .addedTo{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0,0,0,0.7);
+    transition: all 500ms linear;
+    opacity: 0;
+    overflow: hidden;
+    p{
+      padding-top: 48px;
+      font-size: 450%;
+      line-height:0.7;
+      font-family: "PoppinsExtraLight";
+      color: $light_color;
+      text-align: left;
+    } 
+
+  }
+  .totals{
+    border-bottom: 1px solid #e4e4e4;
+    p{
+      text-align: center;
+      padding: 0px 0px 12px;
+    }
+    p.total{
+      padding: 0px;
+    }
+    p.price{
+      padding: 0px 0px 12px;
+      font-size: 200%;
+      text-align: center;
+      font-family: "PoppinsExtraBold";
+      color: $dark_color;
+    } 
+    p.price span{
+      padding: 0px 0px 12px;
+      font-size: inherit;
+      text-align: center;
+      font-family: "PoppinsExtraBold";
+      color: $dark_color;
+    }
+  }
+  .currency{
+    text-align: center;
+    padding: 12px 0px;
+    p{
+      padding: 0px 0px 12px 0px;
+    }
+  }
+}

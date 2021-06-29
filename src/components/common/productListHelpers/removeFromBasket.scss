@@ -1,0 +1,13 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+.remove{
+  color: $mid_color;
+  text-decoration: none;
+  cursor: pointer;
+}
+.remove:hover{
+  color: $dark_color;
+}

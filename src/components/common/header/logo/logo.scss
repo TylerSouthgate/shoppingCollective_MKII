@@ -1,0 +1,16 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+.logo{
+  a{
+    font-family: "PoppinsExtraLight";
+    font-size: 36px;
+    line-height: 0.7;
+    text-decoration: none;
+    margin-top: 0px;
+    display: block;
+    color: $light_color;
+  }
+}

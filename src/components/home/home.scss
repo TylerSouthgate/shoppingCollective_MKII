@@ -1,0 +1,75 @@
+$text_color: #616161;
+$dark_color: #425664;
+$light_color: #f6f4f2;
+$mid_color: #c6ad8f;
+
+
+#home{
+  width: 100%;
+  max-width: 100%;
+  padding-top: 65px;
+  .leader{
+    margin: 0px;
+    padding: 100px 0px;
+    background-image: url('../../images/868c4a49d53ac3492503bd6bc7093d2e.jpg');
+    //min-height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .homepagePage{
+    max-width: 1024px;
+    margin: 0px auto;
+    
+    h1{
+      color: $mid_color;
+      text-align: left;
+      font-size: 80px;
+      font-family: "PoppinsExtraLight";
+      line-height: 0.75;
+      margin: 24px 0px;
+      span{
+        color: $light_color;
+        font-size: 125px;
+        line-height: inherit;
+        font-family: inherit;
+      }
+    }
+    .homeTriPanel{
+      padding: 48px 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      border-bottom: 1px solid #e4e4e4;
+      div{
+        max-width: 200px;
+        text-align: center;
+        svg{
+          width: 100px;
+          height: 100px;
+          color: $dark_color
+        }
+        p{
+          font-size: 128%;
+        }
+      }
+    }
+    .singlePanel{
+      padding: 48px 0px;
+      border-bottom: 1px solid #e4e4e4;
+      text-align: center;
+      h3{
+        font-size: 40px;
+        font-family: "PoppinsExtraLight";
+        margin: 0px 0px 12px;
+      }
+      p{
+        font-size: 128%;
+      }
+    }
+  }
+}
