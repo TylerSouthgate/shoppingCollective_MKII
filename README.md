@@ -1,2 +1,2 @@
-# shoppingCollective_MKII
+# shopping_collective
 Code Demo
