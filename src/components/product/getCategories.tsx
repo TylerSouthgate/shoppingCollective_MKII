@@ -8,7 +8,7 @@ type ITypes={
 export const GetCategories = ({cats}: ITypes) => {
   let catsList: any = cats.split(',')
   return(
-    <div id={style.cats}>
+    <div className={style.cats}>
       <p>Categories</p>
       {Object.keys(catsList).map((key: any)=>{
         return(

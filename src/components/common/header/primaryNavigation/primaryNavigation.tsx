@@ -9,11 +9,11 @@ type ITypes = {
 
 export const PrimaryNavigation = ({navigationList}: ITypes) => {
   return(
-    <ul id={style.primaryNav} className={masterStyle.clrfix}>
+    <ul className={style.primaryNav}>
       {Object.keys(navigationList).map((key: any)=>{
         if(navigationList[key]['type']=='PRIMARY'){
           return(
-            <li key={'priNav'+key}>
+            <li key={'priNav'+key} className={masterStyle.clrfix}>
               <PrimaryNavigationItem 
                 label={navigationList[key]['label']}
                 link={navigationList[key]['link']}

@@ -10,11 +10,11 @@ type ITypes = {
 
 export const FooterNavigation = ({navigationList}: ITypes) => {
   return(
-    <ul id={style.primaryNav} className={masterStyle.clrfix}>
+    <ul>
       {Object.keys(navigationList).map((key: any)=>{
         if(navigationList[key]['type']=='PRIMARY'){
           return(
-            <li key={'priNav'+key}>
+            <li key={'priNav'+key} className={masterStyle.clrfix}>
               <FooterNavigationItem 
                 label={navigationList[key]['label']}
                 link={navigationList[key]['link']}

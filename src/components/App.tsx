@@ -8,7 +8,7 @@ import style from './routeScss/index.scss';
 export default class App extends React.Component{
   render = () => {
     return(
-      <div id={style.page}>
+      <div className={style.page}>
         <BrowserRouter>
           <header>
             <PageHeader />

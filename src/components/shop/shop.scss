@@ -3,7 +3,7 @@ $dark_color: #425664;
 $light_color: #f6f4f2;
 $mid_color: #c6ad8f;
 
-#shopListCont{
+.shopListCont{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -51,7 +51,7 @@ $mid_color: #c6ad8f;
 
     }
   }
-  #shopListItem:hover{
+  .shopListItem:hover{
     background: $light_color;
     cursor: pointer;
     border-radius: 8px;

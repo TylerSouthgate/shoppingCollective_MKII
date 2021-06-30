@@ -51,36 +51,38 @@ class BasketPage extends React.Component<IProps, IStates>{
   }
   render = () => {
     return(
-      <section id={style.basket} className={masterStyle.pageTemplate}>
-        <MastHead title={'What\'s in the bag?'} />
-        <BackButton />
-        <div className={masterStyle.clrfix}>
-        {this.props.auth.auth.basket<=0?
-          <div className={style.empty}>
-            <h3>Its empty!</h3>
-            <p>Your basket is totally empty! Which from our point of view is a really bad thing.</p>
-            <p>Go on, do a good thing and <a href={ROUTE_SHOP}>add some stuff</a></p>
+      <section className={style.basket}>
+        <div className={masterStyle.pageTemplate}>
+          <MastHead title={'What\'s in the bag?'} />
+          <BackButton />
+          <div className={masterStyle.clrfix}>
+          {this.props.auth.auth.basket<=0?
+            <div className={style.empty}>
+              <h3>Its empty!</h3>
+              <p>Your basket is totally empty! Which from our point of view is a really bad thing.</p>
+              <p>Go on, do a good thing and <a href={ROUTE_SHOP}>add some stuff</a></p>
+            </div>
+          :
+            <>
+              <div className={style.left}>
+                <BasketList 
+                  data={this.props.auth.auth.basket}
+                  currency={this.props.auth.auth.currency}
+                  exchange={this.props.auth.auth.exchange}
+                  removeBasketItem={this.removeBasketItem}
+                />
+              </div>
+              <div className={style.right}>
+                <BasketActions 
+                  data={this.props.auth.auth.basket}
+                  currency={this.props.auth.auth.currency}
+                  exchange={this.props.auth.auth.exchange}
+                  updateCurrency={this.updateCurrency}
+                />
+              </div>
+            </>
+          }
           </div>
-        :
-          <>
-            <div className={style.left}>
-              <BasketList 
-                data={this.props.auth.auth.basket}
-                currency={this.props.auth.auth.currency}
-                exchange={this.props.auth.auth.exchange}
-                removeBasketItem={this.removeBasketItem}
-              />
-            </div>
-            <div className={style.right}>
-              <BasketActions 
-                data={this.props.auth.auth.basket}
-                currency={this.props.auth.auth.currency}
-                exchange={this.props.auth.auth.exchange}
-                updateCurrency={this.updateCurrency}
-              />
-            </div>
-          </>
-        }
         </div>
       </section>
     )

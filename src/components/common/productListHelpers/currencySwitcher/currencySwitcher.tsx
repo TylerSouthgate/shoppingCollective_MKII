@@ -21,7 +21,7 @@ export const CurrencySwitcher = ({currentCurrancy, updateCurrency, type}:ITypes)
   return(
     <>
     {type==='RADIO'?
-      <div id={style.currencySwitcher}>
+      <div className={style.currencySwitcher}>
         <p>Select your currency: </p>
         <label htmlFor="usd_radio">
           <input type="radio" name="usd_radio" checked={thisCurrency=='USD'} onChange={() => {makeTheChange('USD')}} />
@@ -37,7 +37,7 @@ export const CurrencySwitcher = ({currentCurrancy, updateCurrency, type}:ITypes)
         </label>
       </div>
     :
-      <div id={style.currencySwitcher}>
+      <div className={style.currencySwitcher}>
         <p>Select your currency: </p>
         <select defaultValue={currentCurrancy} onChange={(e: any) => {makeSelectTheChange(e)}}>
           <option value={'USD'}>USD</option>

@@ -189,6 +189,10 @@ li{
 body{
   background: $light_color;
 }
+select{
+  width: 75%;
+  padding: 6px; 
+}
 .clrfix:after {
 	clear: both;
 	content: ".";
@@ -200,7 +204,7 @@ body{
 .output{
   width: 100%;
 }
-#page{
+.page{
   background: #FFF;
   max-width: 100%;
 }
@@ -208,10 +212,9 @@ section{
   max-width: 1024px;
   margin: 0px auto 48px;
 }
-section.pageTemplate{
+.pageTemplate{
   padding: 120px 12px 0px;    
 }
-
 
 header{
   background: $dark_color;

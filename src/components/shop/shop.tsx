@@ -34,10 +34,15 @@ class ShopPage extends React.Component<IProps, IStates>{
   }
   updateBasket = (inValue: string) => {
     let localList: Array<any> = this.props.auth.auth['basket'];
-    let newNode: any = {};
+    let newNode: any = new Object;
     newNode['item']=inValue;
-    localList.push(newNode);
-    this.props.dispatch(updateBasket(localList));
+    try{
+      localList.push(newNode);
+      this.props.dispatch(updateBasket(localList));
+    }
+    catch{
+      console.log('bugger!');
+    }
   }
   emptyBasket = () => {
     this.props.dispatch(updateBasket([]));

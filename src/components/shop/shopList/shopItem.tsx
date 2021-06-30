@@ -21,7 +21,7 @@ export const ShopItem = ({data, updateBasket, currency, exchange }: ITypes) => {
     thisHistory.push(ROUTE_PRODUCT+'?p='+inValue);
   } 
   return(
-    <div id={style.shopListItem}>
+    <div className={style.shopListItem}>
       <div onClick={()=>{gotoProduct(data['id'])}}>
         <div className={style.addedTo} style={localStyle}><p>Added to basket</p></div>
         <GetFirstImage data={data['imageURLs']} usage={'SHOP'}/>

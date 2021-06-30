@@ -32,7 +32,7 @@ export default class BasketList extends React.Component<IProps, IStates>{
                 let thisProduct: any = this.state.productList[p_key];
                 if(thisProduct['id']==thisNode['item']){
                   return(
-                    <div key={key+p_key} id={style.basketItem}>
+                    <div key={key+p_key} className={style.basketItem}>
                       <BasketItem 
                         product={thisProduct} 
                         currency={this.props.currency}

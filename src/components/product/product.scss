@@ -3,7 +3,7 @@ $dark_color: #425664;
 $light_color: #f6f4f2;
 $mid_color: #c6ad8f;
 
-#productPage{
+.productPage{
   .left{
     float: left;
     width: 80%;
@@ -23,35 +23,36 @@ $mid_color: #c6ad8f;
     }
     .detailImageCont{
       margin: 14px 24px 24px 0px;
-      #controlLeft, #controlRight{
+      .controllerLeft{
         position: absolute;
         top: 40px;
-        
-      }
-      #controlLeft{
         left: 0px;
-      }
-      #controlRight{
-        right: 0px;
-      }
-      #controlLeft.controllerLeft{
         background-color: rgba(0,0,0,0.5);
         padding: 6px 8px 3px 6px;
         border-radius: 50%;
         cursor: pointer;
       }
-      #controlRight.controllerRight{
+      .controllerRight{
+        position: absolute;
+        top: 40px;
+        right: 0px;
         background-color: rgba(0,0,0,0.5);
         padding: 6px 6px 3px 8px;
         border-radius: 50%;
         cursor: pointer;
       }
-      #controlLeft.controllerLeftInactive{
+      .controllerLeftInactive{
+        position: absolute;
+        top: 40px;
+        left: 0px;
         background-color: rgba(0,0,0,0.1);
         padding: 6px 8px 3px 6px;
         border-radius: 50%;
       }
-      #controlRight.controllerRightInactive{
+      .controllerRightInactive{
+        position: absolute;
+        top: 40px;
+        right: 0px;
         background-color: rgba(0,0,0,0.1);
         padding: 6px 6px 3px 8px;
         border-radius: 50%;
@@ -99,7 +100,7 @@ $mid_color: #c6ad8f;
   }
 }
 
-#productActions{
+.productActions{
   background: $light_color;
   padding: 12px;
   border-radius: 8px;
@@ -157,7 +158,7 @@ $mid_color: #c6ad8f;
     }
   }
 }
-#cats{
+.cats{
   margin: 24px 0px;
   p{
     font-weight: bold;

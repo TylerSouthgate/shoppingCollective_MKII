@@ -37,8 +37,8 @@ export const DisplayImages = ({images}: ITypes) => {
       <div className={style.displayImage} style={thisDisplayImage}></div>
       
       <div className={style.masterCar}>
-        <div id={style.controlLeft} className={canRight?style.controllerLeft:style.controllerLeftInactive} onClick={canRight?()=>{leftSlider()}:null}><AiOutlineLeft /></div>
-        <div id={style.controlRight} className={canLeft?style.controllerRight:style.controllerRightInactive} onClick={canLeft?()=>{rightSlider()}:null}><AiOutlineRight /></div>
+        <div className={canRight?style.controllerLeft:style.controllerLeftInactive} onClick={canRight?()=>{leftSlider()}:null}><AiOutlineLeft /></div>
+        <div className={canLeft?style.controllerRight:style.controllerRightInactive} onClick={canLeft?()=>{rightSlider()}:null}><AiOutlineRight /></div>
       
         <div className={style.thumbList}>
           

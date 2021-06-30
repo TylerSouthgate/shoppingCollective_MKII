@@ -3,14 +3,14 @@ $dark_color: #425664;
 $light_color: #f6f4f2;
 $mid_color: #c6ad8f;
 
-#header{
+.header{
   margin: 0px auto 0px !important;
   padding: 0px 12px;
   .upper{
     width: 100%;
     border-bottom: 1px solid $light_color;
     position: relative;
-    #basket{
+    .basket{
       position: absolute;
       top:12px;
       right: 0px;

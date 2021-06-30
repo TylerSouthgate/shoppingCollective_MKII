@@ -8,7 +8,7 @@ type ITypes = {
 
 export const MastHead = ({title, hookLine}: ITypes) => {
   return(
-    <div id={style.mastHead}>
+    <div className={style.mastHead}>
       <h1>{title}</h1>
       {hookLine!=null&&hookLine!=''?<p>{hookLine}</p>:null}
     </div>

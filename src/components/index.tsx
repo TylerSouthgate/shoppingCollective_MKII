@@ -19,3 +19,7 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("output")
 );
+
+//if (typeof window != 'undefined' && window.Cypress) {
+//  window['store'] = store
+//}

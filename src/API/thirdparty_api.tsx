@@ -9,3 +9,4 @@ export const getExchangeRate = (base:string,to:string) => {
 	let finalUrl = API_CURRENCY_CONVERTER_EXCHANGE_RATES.replace(':api_key', API_KEY_FREE).replace(':conversion', base+'_'+to);
   return axios.get(finalUrl);
 }
+

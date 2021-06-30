@@ -36,7 +36,7 @@ export default class BasketActions extends React.Component<IProps, IStates>{
   }
   render = () => {
     return(
-      <div id={style.basketActions}>
+      <div className={style.basketActions}>
         <div className={style.totals}>
           <p><b>{this.props.data.length}</b> {this.props.data.length>1?'items in your basket':'item in your basket'}</p>
           <p className={style.total}>Total:</p>

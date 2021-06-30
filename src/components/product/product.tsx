@@ -68,16 +68,18 @@ class ProductPage extends React.Component<IProps, IStates>{
   }
   render = () => {
     return(
-      <section id={style.productPage} className={masterStyle.pageTemplate}>
-        <MastHead title={'Lets take a closer look at that...'} />
-        <BackButton />
-        <ProductDetails 
-          product={this.getProduct()}
-          currency={this.props.auth.auth.currency}
-          exchange={this.props.auth.auth.exchange}
-          updateCurrency={this.updateCurrency}
-          updateBasket={this.updateBasket}
-        />
+      <section className={style.productPage}>
+        <div className={masterStyle.pageTemplate}>
+          <MastHead title={'Lets take a closer look at that...'} />
+          <BackButton />
+          <ProductDetails 
+            product={this.getProduct()}
+            currency={this.props.auth.auth.currency}
+            exchange={this.props.auth.auth.exchange}
+            updateCurrency={this.updateCurrency}
+            updateBasket={this.updateBasket}
+          />
+        </div>
       </section>
     )
   }

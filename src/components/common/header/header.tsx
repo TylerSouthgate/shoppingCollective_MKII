@@ -33,7 +33,7 @@ class PageHeader extends React.Component<IProps, IStates>{
     console.log('this.props.auth.auth: ', this.props.auth.auth)
     return(
       <>
-        <section id={style.header}>
+        <section className={style.header}>
           <div className={style.upper}>
             <Logo />
             <Basket emptyBasket={this.emptyBasket} basketNumber={this.props.auth.auth.basket?this.props.auth.auth.basket.length:0}/>

@@ -11,7 +11,7 @@ type ITypes = {
 
 export const Basket = ({emptyBasket, basketNumber}: ITypes) => {
   return(
-    <div id={style.basket}>
+    <div className={style.basket}>
       <p className={style.basketText}><span onClick={()=>{emptyBasket()}}><AiOutlineClear />Empty Basket</span> | <span><AiOutlineShoppingCart /> {basketNumber} - <Link to={ROUTE_BASKET}>View basket</Link></span></p>
     </div>
   )

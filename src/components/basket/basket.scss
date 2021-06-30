@@ -3,11 +3,11 @@ $dark_color: #425664;
 $light_color: #f6f4f2;
 $mid_color: #c6ad8f;
 
-#basket{
+.basket{
   .left{
     float: left;
     width: 80%;
-    #basketItem{
+    .basketItem{
       border-bottom: 1px solid #e4e4e4;
       padding: 0px 0px 12px;
       margin: 0px 24px 12px 0px;
@@ -38,7 +38,7 @@ $mid_color: #c6ad8f;
     }
   }
 }
-#basketActions{
+.basketActions{
   background: $light_color;
   padding: 12px;
   border-radius: 8px;

@@ -10,6 +10,6 @@ export const BackButton = () => {
     history.go(-1);
   }
   return(
-    <div id={style.back}><p onClick={()=>{goBack()}}><AiOutlineArrowLeft /> Back</p></div>
+    <div className={style.back}><p onClick={()=>{goBack()}}><AiOutlineArrowLeft /> Back</p></div>
   )
 }

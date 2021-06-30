@@ -15,7 +15,7 @@ export default class BuildShopList extends React.Component<IProps>{
   }
   render = () => {
     return(
-      <div id={style.shopListCont}>
+      <div className={style.shopListCont}>
         {Object.keys(this.props.data).map((key: any)=>{
           let thisNode: any = this.props.data[key];
           return(
