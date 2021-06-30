@@ -1,4 +1,4 @@
-.currencySwitcher{
+.currencySwitcherRadio{
   width: 100%;
   padding-bottom: 12px;
   border-bottom: 1px solid #e4e4e4;
@@ -11,6 +11,25 @@
     margin-right: 12px;
     input{
       margin-right: 6px;
+    }
+  }
+}
+.currencySwitcherSelect{
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e4e4e4;
+  div{
+    p{
+      margin-right: 12px;
+      padding: 6px 6px 0px 0px;
+      float: left;
+    }
+    label{
+      display: inline-block;
+      margin-right: 12px;
+      input{
+        margin-right: 6px;
+      }
     }
   }
 }
