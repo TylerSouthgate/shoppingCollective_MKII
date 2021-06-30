@@ -37,31 +37,29 @@ class HomePage extends React.Component<IProps,IStates>{
   render = () => { 
     return(
       <section className={style.home}>
-        <div className={masterStyle.pageTemplate}>
-          <div className={style.leader} style={this.state.localStyle}>
-            <div className={style.homepagePage}>
-              <h1 className={style.headerTitle}>welcome to<br /><span>shopping<br />collective</span></h1>
+        <div className={style.leader} style={this.state.localStyle}>
+          <div className={style.homepagePage}>
+            <h1 className={style.headerTitle}>welcome to<br /><span>shopping<br />collective</span></h1>
+          </div>
+        </div>
+        <div className={style.homepagePage}>
+          <div className={style.homeTriPanel}>
+            <div>
+              <AiFillExperiment />
+              <p>Nullam ornare elit venenatis gravida rutrum. Vivamus eu metus fringilla, dignissim mauris quis, consequat urna.</p>
+            </div>
+            <div>
+              <AiOutlineDeploymentUnit />
+              <p>Proin varius turpis tincidunt felis elementum aliquet. Vivamus eu metus fringilla, dignissim mauris quis, consequat urna. Etiam ut sollicitudin nisi. </p>
+            </div>
+            <div>
+              <AiOutlineAlert />
+              <p>Proin varius turpis tincidunt felis elementum aliquet. Nullam ornare elit venenatis gravida rutrum. </p>
             </div>
           </div>
-          <div className={style.homepagePage}>
-            <div className={style.homeTriPanel}>
-              <div>
-                <AiFillExperiment />
-                <p>Nullam ornare elit venenatis gravida rutrum. Vivamus eu metus fringilla, dignissim mauris quis, consequat urna.</p>
-              </div>
-              <div>
-                <AiOutlineDeploymentUnit />
-                <p>Proin varius turpis tincidunt felis elementum aliquet. Vivamus eu metus fringilla, dignissim mauris quis, consequat urna. Etiam ut sollicitudin nisi. </p>
-              </div>
-              <div>
-                <AiOutlineAlert />
-                <p>Proin varius turpis tincidunt felis elementum aliquet. Nullam ornare elit venenatis gravida rutrum. </p>
-              </div>
-            </div>
-            <div className={style.singlePanel}>
-              <h3>Duis mollis augue in aliquam dignissim!</h3>
-              <p>Nullam scelerisque, enim eu pulvinar dapibus, neque erat lacinia leo, vitae facilisis risus felis vitae sem. Curabitur vitae tortor efficitur, vestibulum justo a, fermentum ipsum.</p>
-            </div>
+          <div className={style.singlePanel}>
+            <h3>Duis mollis augue in aliquam dignissim!</h3>
+            <p>Nullam scelerisque, enim eu pulvinar dapibus, neque erat lacinia leo, vitae facilisis risus felis vitae sem. Curabitur vitae tortor efficitur, vestibulum justo a, fermentum ipsum.</p>
           </div>
         </div>
       </section>
